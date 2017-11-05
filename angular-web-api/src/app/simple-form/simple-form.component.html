@@ -1,3 +1,42 @@
-<p>
-  simple-form works!
-</p>
+<div class="simple-form animated fadeInUp">
+  <div class="img-container">
+    <div class="text-center pull-right photo">
+      <img src="assets/img/flat-avatar.png" class="user-avatar img-circle img-responsive">
+      <h1>SIMPLE
+        <br>
+        <span>FORMULAR</span>
+        <br>
+        <small>Do it clean, I'm watching</small>
+      </h1>
+    </div>
+  </div>
+  <div class="form-content">
+    <form [formGroup]="myForm" class="bottom-75 ng-pristine ng-valid" (ngSubmit)="onSubmit(myForm)">
+      <div class="table-form">
+        <div class="form-groups">
+          <div class="form-group">
+            <input formControlName="firstName" type="text" class="form-control input-lg" placeholder="FIRST NAME"> </div>
+          <div class="form-group">
+            <input formControlName="lastName" type="text" class="form-control input-lg" placeholder="LAST NAME"> </div>
+        </div>
+        <div class="button-container">
+          <button type="submit" class="btn btn-default login">
+            <img src="assets/img/arrow.png">
+          </button>
+        </div>
+      </div>
+      <div class="remember">
+        <label class="checkbox1" for="Option">
+          <input formControlName="subscribe" id="Option" type="checkbox">
+          <span></span>
+        </label> I want to subscribe to the newsletter
+      </div>
+      <div class="remember">
+        <span *ngIf="myForm.controls.firstName.errors && myForm.controls.firstName.touched" class="text-danger">Please enter your first name</span>
+      </div>
+      <div class="remember">
+        <span *ngIf="myForm.controls.lastName.errors && myForm.controls.lastName.touched" class="text-danger">Please enter your last name</span>
+      </div>
+    </form>
+  </div>
+</div>

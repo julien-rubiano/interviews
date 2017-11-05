@@ -1,0 +1,184 @@
+.simple-form {
+  overflow: auto;
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #1abc9c;
+  color: #fff;
+  padding: 3em;
+  position: relative;
+}
+
+.simple-form:before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  border-right: solid 120px #1abc9c;
+}
+
+.simple-form .img-container {
+  text-align: right;
+  width: 40%;
+  position: relative;
+}
+
+.simple-form .img-container,
+.simple-form .form-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.simple-form .user-avatar {
+  max-width: 230px;
+  width: 100%;
+  border: 3px solid #fff;
+}
+
+.simple-form h1 {
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 34px;
+}
+
+.simple-form h1 span {
+  font-size: 27px;
+}
+
+.simple-form h1 small {
+  color: #fff;
+  opacity: 0.7;
+  padding-right: 5px;
+  font-size: 16px;
+  display: block;
+  margin-top: 8px;
+}
+
+.simple-form .form-content {
+  position: relative;
+}
+
+.simple-form .form-content .bottom-75 {
+  margin-bottom: 75px;
+  max-width: 400px;
+}
+
+.simple-form .form-content .table-form {
+  display: table;
+  width: 100%;
+}
+
+.simple-form .form-content .table-form .form-groups {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.simple-form .form-group {
+  padding: 8px 0;
+  margin-bottom: 0;
+}
+
+.simple-form .form-content .input-lg {
+  border-radius: 0;
+}
+
+.simple-form .form-content .form-control {
+  background: #18af91;
+  border-color: #18af91;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.simple-form .form-content .table-form .button-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.simple-form .form-content .login {
+  height: 110px;
+  width: 100px;
+  border-radius: 0;
+  background: orange;
+  border-color: orange;
+  box-shadow: none;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.simple-form .remember {
+  margin-top: 8px;
+}
+
+.simple-form .remember .checkbox1 {
+  padding-right: 5px;
+}
+
+.simple-form .remember span.pass {
+  float: right;
+  padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .simple-form {
+    padding: 15px;
+  }
+  .simple-form .img-container {
+    display: block;
+    width: 100%;
+  }
+  .img-container .pull-right {
+    float: none !important;
+  }
+  .img-container .img-responsive {
+    display: initial;
+  }
+  .simple-form,
+  .img-content,
+  .form-content {
+    display: block !important;
+  }
+  .simple-form:before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    border-right: none;
+  }
+  .simple-form .form-content .bottom-75 {
+    margin: 0 auto;
+  }
+  .form-content .remember {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .simple-form .form-content .table-form {
+    display: block;
+  }
+  .simple-form .form-content .table-form .form-groups,
+  .simple-form .form-content .table-form .button-container {
+    display: block;
+    width: 100%;
+  }
+  .simple-form .form-content .table-form .form-groups .login,
+  .simple-form .form-content .table-form .button-container .login {
+    width: 100%;
+    height: 46px;
+    margin: 8px 0 0;
+  }
+  .simple-form .form-content .table-form .form-groups .login img,
+  .simple-form .form-content .table-form .button-container .login img {
+    max-width: 26px;
+  }
+}

@@ -1,1 +1,271 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background: #1abc9c;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 63px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 60px;
+}
+
+h2 small {
+  color: #fff;
+}
+
+.container-fluid .jumbotron {
+  background: inherit;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .container {
+  max-width: 100%;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: ' ';
+  display: table;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #17a689;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.btn-white {
+  border-radius: 0 !important;
+  border: 3px solid;
+  background: 0 0;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  border-color: #fff;
+  color: #797979;
+  background: #fff;
+}
+
+.text-danger {
+  font-weight: bold;
+}
+
+.fa {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+
+.form-control {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 1px 0 0;
+  line-height: normal;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+} /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+} /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+} /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+} /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+} /* Microsoft Edge */
+
+.checkbox1 {
+  position: relative;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.checkbox1 input[type='checkbox'] {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  left: 0;
+}
+
+.checkbox1 span {
+  cursor: pointer;
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.checkbox1 span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+  color: #1abc9c;
+  text-align: center;
+  font-size: 22px;
+  border: solid 2px #ddd;
+  line-height: 16px;
+}
+
+.checkbox1 input:checked + span:before {
+  background: #fff;
+  border-color: #fff;
+  content: '\2713';
+}
+
+@media screen and (min-width: 768px) {
+  .container-fluid .jumbotron {
+    padding: 48px 60px;
+  }
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

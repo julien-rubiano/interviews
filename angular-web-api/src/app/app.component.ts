@@ -1,20 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  constructor(private appService: AppService) {}
+export class AppComponent {
+  constructor() {}
 
-  title = 'app';
-  webApiValues: string[];
+  menuOpen = false;
 
-  ngOnInit() {
-    this.appService.getValues().subscribe(data => {
-      this.webApiValues = data;
-    });
+  toggleSidebar() {
+    this.menuOpen = !this.menuOpen;
   }
 }

@@ -1,0 +1,12 @@
+:host {
+  z-index: 2;
+  overflow-x: hidden;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  background: #1abc9c;
+}

@@ -1,0 +1,105 @@
+img {
+  vertical-align: middle;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.sidebar {
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: bottom 0.2s linear;
+  -moz-transition: bottom 0.2s linear;
+  -o-transition: bottom 0.2s linear;
+  transition: bottom 0.2s linear;
+  width: 265px;
+  background: #18aa8d;
+  color: #fff;
+}
+
+.sidebar-toggle {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: -10px;
+}
+
+.sidebar-header {
+  margin-top: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sidebar-header .sidebar-img {
+  width: 140px;
+  border: 3px solid #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  height: 40px;
+  padding: 11px 11px 11px 28px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background: #1abc9c;
+}
+
+.sidebar ul li a {
+  display: block;
+  height: 35px;
+  color: #fff;
+}
+
+.container-fluid {
+  z-index: 2;
+  margin-left: 265px;
+  overflow-x: hidden;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+.container-fluid.full {
+  margin-left: 0;
+}
+
+.menutoggle .fa {
+  position: absolute;
+  left: 15px;
+  top: 25px;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+  .container-fluid {
+    margin-left: 600px;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+}
