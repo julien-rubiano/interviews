@@ -130,7 +130,9 @@ h2 small {
 }
 
 .btn-white:hover,
-.btn-white:focus {
+.btn-white:focus,
+.btn-white:active,
+.btn-white:active:focus {
   border-color: #fff;
   color: #797979;
   background: #fff;
